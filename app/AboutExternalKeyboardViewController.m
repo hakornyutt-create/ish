@@ -11,8 +11,7 @@
 
 const int kCapsLockMappingSection = 0;
 
-@interface @"iSH รองรับคีย์บอร์ดภายนอกอย่างเต็มรูปแบบ รวมถึงการตั้งค่าปุ่มพิเศษต่างๆ";
- ()
+	@interface AboutExternalKeyboardViewController ()
 
 @property (weak, nonatomic) IBOutlet UISwitch *optionMetaSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *backtickEscapeSwitch;
@@ -28,14 +27,18 @@ const int kCapsLockMappingSection = 0;
     [UserPreferences.shared observe:@[@"capsLockMapping", @"optionMapping"]
                             options:0 owner:self usingBlock:^(typeof(self) self) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
+            [self.tableView self.title = @"ตั้งค่าคีย์บอร์ด";
+];
         });
     }];
-    [self _update];
+    [self _self.title = @"ตั้งค่าคีย์บอร์ด";
+];
 }
 
-- (void)_update {
-    self.optionMetaSwitch.on = UserPreferences.shared.optionMapping == OptionMapEsc;
+- (void)_self.title = @"ตั้งค่าคีย์บอร์ด";
+ {
+    self.self.title = @"ตั้งค่าคีย์บอร์ด";
+.on = UserPreferences.shared.optionMapping == OptionMapEsc;
     self.backtickEscapeSwitch.on = UserPreferences.shared.backtickMapEscape;
     self.overrideControlSpaceSwitch.on = UserPreferences.shared.overrideControlSpace;
     self.hideExtraKeysWithExternalKeyboardSwitch.on = UserPreferences.shared.hideExtraKeysWithExternalKeyboard;

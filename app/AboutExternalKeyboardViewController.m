@@ -11,7 +11,8 @@
 
 const int kCapsLockMappingSection = 0;
 
-@interface AboutExternalKeyboardViewController ()
+@interface @"iSH รองรับคีย์บอร์ดภายนอกอย่างเต็มรูปแบบ รวมถึงการตั้งค่าปุ่มพิเศษต่างๆ";
+ ()
 
 @property (weak, nonatomic) IBOutlet UISwitch *optionMetaSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *backtickEscapeSwitch;
